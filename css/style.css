@@ -1,8 +1,23 @@
 body{
+  font:300 17/1.58 "Raleway", Arial, sans-serif ;
+  color: #262626;
+}
 
 }
 
 /* Typography */
+
+h1, h2, h3, h4, h5,h6 {
+	font-weight:700;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
 a,
 input[type="submit"],
 input[type="button"],
@@ -16,6 +31,11 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 200px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
@@ -51,7 +71,175 @@ textarea {
 }
 
 /* Layout */
-.ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+.ba-grid + .ba-grid {
+    margin-top: 30px;
 }
+
+
+.ba-grid > [class*="ba-width-"] {
+    float: left;
+    padding-left: 30px;
+}
+
+.ba-grid {
+    margin-left: -30px;
+}
+.ba-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+}
+
+.ba-frash {
+	min-height: 100vh;
+	background: #fff url(../img/fresh.jpg) 50%;
+	background-size: cover;
+}
+
+.ba-header {
+	padding-bottom: 43px;
+}
+
+.ba-logo {
+	margin-top:55px;
+}
+
+.ba-menu {
+	list-style: none;
+	margin: 0;
+	padding-top:65px;
+}
+
+.ba-menu li{
+	display: inline-block;
+	margin-left:30px;
+	padding-top: 4px;
+}
+
+.ba-menu a {
+	text-decoration: none;
+	font-weight: 700;
+	color: inherit;
+	font-size: 16px;
+}
+
+.ba-menu a:hover {
+	/*background: #ededef;*/
+	color:#df496c;
+}
+
+.ba-menu .active {
+    border-top: 3px solid #ff6033;
+}
+
+.ba-banner {
+	padding: 190px 0 400px;
+	position: relative;
+}
+
+.ba-banner__title {
+	font-size: 60px;
+	font-weight:800;
+	text-align: left;
+	margin: 0 0 9px 0;
+}
+
+.ba-banner p {
+	line-height:27px;
+	margin:0 0 30px 0;
+}
+
+.ba-banner .ba-button {
+	background-color:  #ff6033;
+}
+
+
+.ba-scroll {
+	position: absolute;
+	left: 573px;
+	bottom: 70px;
+
+}
+
+.ba-scroll:hover {
+	background-color: rgba(234, 233, 237, 0.7)
+}
+
+.ba-button:hover {
+	background-color: rgba(255, 96, 51, 0.7);
+}
+
+/*ba-about-us*/
+
+.light {
+	color: #fff;
+}
+
+.ba-about-us {
+	background-color:  #00c4c4;
+	padding: 77px 0 55px 0;
+}
+
+
+.ba-about-us__title {
+	font-size: 90px;
+	margin:87px 0 10px 0;
+	padding:0 0 0 70px;
+}
+
+.ba-about-us p {
+	padding:0 75px 0 70px;
+	line-height: 27px;
+	margin:0;
+	text-align: left;
+}
+
+
+/*ba-our-services*/
+
+.ba-our-services {
+	background-color:  #70bfff;
+	padding: 105px 0 130px 0;
+}
+
+.ba-our-services__title {
+	background: #70bfff url(../img/galary/tomato.png) no-repeat 100% -20%;
+	padding: 212px 0 240px 0;
+	margin: 0;
+	font-size: 90px;
+	text-align: right;
+}
+
+.ba-list {
+	list-style: none;
+	padding: 0;
+	margin: 77px 0 0 97px;
+}
+
+.ba-list li {
+	background-color:  #ffffff;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	width: 400px;
+	height: 100px;
+	line-height: 27px;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom:20px;
+	position: relative;
+	padding: 33px 118px  26px 46px;
+}
+
+
+.ba-icon {
+	position: absolute;
+	top:0px;
+	right: 0px;
+	padding: 25px 25px 30px 30px;
+    border-left: 1px solid #000;
+    max-width:100px;
+}
+
+
+
+
