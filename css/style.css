@@ -191,6 +191,9 @@ textarea {
 	transform: translateY(-10px);
 }
 
+
+
+
 /*ba-banner*/
 
 .ba-banner {
@@ -201,8 +204,6 @@ textarea {
 	font-size: 60px;
 	font-weight:800;
 }
-
-
 
 
 
@@ -238,6 +239,14 @@ textarea {
 	margin-bottom: 15px;
 	color: #FFF;
 }
+
+
+@media (max-width: 420px) {
+	.ba-about__content {
+	padding: 80px 0 0 50px;
+}
+}
+
 
 /*ba-our-services*/
 .ba-section{
@@ -311,18 +320,36 @@ textarea {
 }
 
 
+@media (max-width: 420px), (min-width: 421px) and (max-width: 768px) {
+	.ba-section--services {
+		position: relative;
+		padding:0 0 450px;
+	}
+	.ba-list {
+		position: absolute;
+		bottom: 10px;
+		padding-left: 0;
+	}
+	.ba-section--services .ba-title {
+		font-size: 80px;
+	}
+}
+
+
 /*ba-section--gallery*/
 .ba-section--gallery {
 	background-color:  #ffe92f;
 	text-align: center;
 	padding-bottom: 120px;
 }
-.ba-section--gallery p{
-	padding: 12px 282px 0;
+
+.ba-gallery__contant {
+	text-align: center;
+	margin: 0 auto;
 }
 
 .ba-gallery--blackberry {
-	padding-top: 20px;
+	margin-top: 20px;
 }
 .ba-gallery {
 	padding-top: 18px;
@@ -341,6 +368,8 @@ textarea {
 .ba-img-shadow {
 	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);;
 }
+
+
 
 
 /*ba-section--subscribe*/
@@ -367,6 +396,7 @@ textarea {
 	text-align: center;
 	font-size: 20px;
 	font-weight : 300px;
+	border-style: none;
 }
 
 .ba-button--subscribe:hover {
@@ -394,6 +424,25 @@ textarea {
 .ba-form--subscribe {
 	margin-bottom: 73px;
 }
+
+@media (max-width: 420px), (min-width: 421px) and (max-width: 768px)  {
+	.ba-section--subscribe p {
+	padding-right: 50px;
+}
+
+.ba-input--subscribe {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.ba-button--subscribe {
+
+}
+.ba-section--subscribe {
+	padding: 50px 0;
+}
+}
+
 
 /*ba-section--blog*/
 
@@ -494,6 +543,17 @@ textarea {
 	background-color:  #b70923;
 }
 
+@media (max-width: 420px), {
+	.ba-section--blog {
+		padding-bottom: 20px;
+	}
+	.ba-button--pink {
+		margin: auto;
+	}
+}
+
+
+
 /*ba-section--contac*/
 .ba-section--contac {
 	background: #fff url(../img/contact.jpg) no-repeat 50%;
@@ -582,7 +642,7 @@ textarea {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 25px;
-	text-align: left;
+
 	padding: 29px 0 31px 0;
 }
 
@@ -596,4 +656,16 @@ textarea {
 .ba-footer--right span {
 	color: #ff2b58;
 	font-weight: 700;
+}
+
+@media (max-width: 800px) {
+	.ba-footer--left, .ba-footer--right, {
+		text-align: center;
+	}
+	.ba-footer__logo {
+	padding-left: 50px;
+}
+    .ba-text-right-larg {
+	text-align: left;
+    }
 }
